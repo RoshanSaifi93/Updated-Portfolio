@@ -15,6 +15,8 @@ import GlassCard from "../UI/GlassCard";
 import PrimaryButton from "../UI/PrimaryButton";
 import SecondaryButton from "../UI/SecondaryButton";
 import Badge from "../UI/Badge";
+import LiveClock from "./LiveClock";
+import HeroCode from "./HeroCode";
 
 function Hero() {
   return (
@@ -23,9 +25,7 @@ function Hero() {
 
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/background.jpg')",
-        }}
+        style={{ backgroundImage: "url('/images/background.jpg')" }}
       />
 
       {/* Overlay */}
@@ -44,50 +44,14 @@ function Hero() {
         <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-start w-full">
           {/* LEFT */}
 
-          <div>
+          <div className="animate-left">
             {/* Fake Code */}
 
-            <div
-              className="
-              font-mono
-              text-purple-400/50
-              text-sm
-              whitespace-pre
-              tracking-wide
-              leading-6
-              mb-6
-              select-none
-              "
-            >
-              {`const developer = {
-
- name: "Roshan Saifi",
- role: "Frontend Developer",
- skills: [
-   "HTML",
-   "CSS",
-   "JavaScript",
-   "React",
-   "Tailwind CSS",
-   "Bootstrap",
-   "Git",
-   "GitHub"
- ]
-
-};`}
-            </div>
+            <HeroCode />
 
             {/* Hero Card */}
 
-            <GlassCard
-              className="
-              p-8
-              max-w-2xl
-              hover:shadow-[0_0_80px_rgba(139,92,246,.35)]
-              transition-all
-              duration-500
-              "
-            >
+            <GlassCard className=" p-8 max-w-2xl hover:shadow-[0_0_80px_rgba(139,92,246,.35)] transition-all duration-500 ">
               <p className="text-gray-300 text-lg">👋 Hello, I'm</p>
 
               <h1 className="text-5xl lg:text-7xl font-bold mt-4 leading-tight">
@@ -115,25 +79,9 @@ function Hero() {
               {/* Social */}
 
               <div className="flex gap-6 mt-10 text-3xl">
-                <FaGithub
-                  className="
-                  cursor-pointer
-                  hover:text-purple-500
-                  hover:scale-125
-                  transition-all
-                  duration-300
-                  "
-                />
+                <FaGithub className=" cursor-pointer hover:text-purple-500 hover:scale-125 transition-all duration-300 " />
 
-                <FaLinkedin
-                  className="
-                  cursor-pointer
-                  hover:text-purple-500
-                  hover:scale-125
-                  transition-all
-                  duration-300
-                  "
-                />
+                <FaLinkedin className=" cursor-pointer hover:text-purple-500 hover:scale-125 transition-all duration-300 " />
 
                 <FaEnvelope
                   className="
@@ -150,7 +98,7 @@ function Hero() {
 
           {/* RIGHT */}
 
-          <div className="space-y-4">
+          <div className="space-y-4 animate-right">
             {/* Clock Card */}
 
             <GlassCard
@@ -161,11 +109,7 @@ function Hero() {
               duration-500
               "
             >
-              <h3 className="text-sm text-gray-400">Local Time</h3>
-
-              <p className="text-3xl font-bold mt-3">10:45 PM</p>
-
-              <p className="text-gray-400 mt-2">Ghaziabad 🇮🇳</p>
+              <LiveClock />
             </GlassCard>
 
             {/* Available */}
@@ -235,6 +179,32 @@ function Hero() {
               </div>
             </GlassCard>
           </div>
+        </div>
+      </div>
+
+      <div
+        className="
+    absolute
+    bottom-6
+    left-1/2
+    -translate-x-1/2
+    flex
+    flex-col
+    items-center
+    text-gray-400
+    z-20
+  "
+      >
+        <span className="text-sm tracking-widest uppercase">Scroll</span>
+
+        <div
+          className="
+      text-3xl
+      animate-bounce-down
+      text-purple-400
+    "
+        >
+          ⌄
         </div>
       </div>
     </section>

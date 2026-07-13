@@ -1,0 +1,52 @@
+/* Left Side Animation */
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Right Side Animation */
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scroll Indicator */
+
+@keyframes bounceDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-left {
+  animation: fadeLeft 1s ease forwards;
+}
+
+.animate-right {
+  animation: fadeRight 1s ease forwards;
+}
+
+.animate-bounce-down {
+  animation: bounceDown 1.8s infinite;
+}
