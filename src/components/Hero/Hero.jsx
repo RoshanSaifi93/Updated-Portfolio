@@ -202,7 +202,7 @@ function Hero() {
         className="
           absolute
           bottom-6
-          left-1/2-translate-x-1/2
+          inset-x-0
           flex
           flex-col
           items-center
