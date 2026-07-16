@@ -21,10 +21,8 @@ function AboutCard() {
           duration-500
         "
       >
-        {/* Photo */}
 
         <div className="relative w-full max-w-[280px] mx-auto">
-          {/* Animated Purple Glow */}
 
           <div
             className="
@@ -35,9 +33,8 @@ function AboutCard() {
               rounded-full
               animate-pulse
             "
-          ></div>
-
-          {/* Image */}
+          >
+          </div>
 
           <div
             className="
@@ -65,25 +62,17 @@ function AboutCard() {
           </div>
         </div>
 
-        {/* Name */}
-
         <h3 className="text-3xl font-bold mt-8">
           {aboutData.name}
         </h3>
-
-        {/* Role */}
 
         <p className="text-purple-400 text-lg mt-3">
           {aboutData.role}
         </p>
 
-        {/* Location */}
-
         <p className="text-gray-400 mt-4">
           📍 {aboutData.location}
         </p>
-
-        {/* Open To Work */}
 
         <div
           className="

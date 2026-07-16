@@ -23,8 +23,6 @@ function ContactSocial() {
         always open to networking and new opportunities.
       </p>
 
-      {/* Social Icons */}
-
       <div className="flex gap-6 mt-10">
         {contactData.socials.map((social, index) => {
           const Icon = social.icon;
@@ -60,8 +58,6 @@ function ContactSocial() {
           );
         })}
       </div>
-
-      {/* Status */}
 
       <div
         className="

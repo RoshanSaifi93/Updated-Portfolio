@@ -1,5 +1,3 @@
-/* Left Side Animation */
-
 @keyframes fadeLeft {
   from {
     opacity: 0;
@@ -12,8 +10,6 @@
   }
 }
 
-/* Right Side Animation */
-
 @keyframes fadeRight {
   from {
     opacity: 0;
@@ -25,8 +21,6 @@
     transform: translateX(0);
   }
 }
-
-/* Scroll Indicator */
 
 @keyframes bounceDown {
   0%,

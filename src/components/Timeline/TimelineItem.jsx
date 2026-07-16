@@ -9,13 +9,10 @@ function TimelineItem({ item, isLast }) {
       transition={{ duration: 0.6 }}
       className="relative pl-16 pb-12"
     >
-      {/* Vertical Line */}
 
       {!isLast && (
         <div className="absolute left-6 top-8 w-[2px] h-full bg-purple-500/30"></div>
       )}
-
-      {/* Timeline Dot */}
 
       <div
         className="
@@ -30,15 +27,12 @@ function TimelineItem({ item, isLast }) {
           border-[#050505]
           shadow-[0_0_20px_rgba(168,85,247,.6)]
         "
-      ></div>
-
-      {/* Year */}
+      >
+      </div>
 
       <p className="text-purple-400 font-semibold tracking-wider">
         {item.year}
       </p>
-
-      {/* Card */}
 
       <div
         className="

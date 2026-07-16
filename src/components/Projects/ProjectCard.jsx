@@ -26,7 +26,6 @@ function ProjectCard({ project }) {
         flex-col
       "
     >
-      {/* Project Image */}
 
       <div className="overflow-hidden relative">
         <img
@@ -62,14 +61,10 @@ function ProjectCard({ project }) {
         )}
       </div>
 
-      {/* Content */}
-
       <div className="p-5 flex flex-col flex-1">
         <h3 className="text-xl font-bold">{project.title}</h3>
 
         <p className="text-gray-400 mt-3 text-sm leading-6">{project.description}</p>
-
-        {/* Tech Stack */}
 
         <div className="flex flex-wrap gap-2 mt-6">
           {project.tech.map((tech, index) => (
@@ -88,8 +83,6 @@ function ProjectCard({ project }) {
             </span>
           ))}
         </div>
-
-        {/* Buttons */}
 
         <div className="flex gap-4 mt-auto pt-8">
           <a

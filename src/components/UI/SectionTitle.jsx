@@ -5,29 +5,9 @@ function SectionTitle({
 }) {
   return (
     <div>
-      <h2
-        className="
+      <h2 className="text-5xl font-bold"> {title} </h2>
 
-text-5xl
-
-font-bold
-
-"
-      >
-        {title}
-      </h2>
-
-      <p
-        className="
-
-text-gray-400
-
-mt-3
-
-"
-      >
-        {subtitle}
-      </p>
+      <p className="text-gray-400 mt-3"> {subtitle} </p>
     </div>
   );
 }

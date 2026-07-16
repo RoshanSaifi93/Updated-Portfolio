@@ -8,14 +8,12 @@ function Timeline() {
       id="journey"
       className="relative py-28 bg-[#050505] overflow-hidden"
     >
-      {/* Background Glow */}
 
       <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-purple-700 opacity-10 blur-[180px] rounded-full"></div>
 
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-700 opacity-10 blur-[170px] rounded-full"></div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        {/* Heading */}
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -38,8 +36,6 @@ function Timeline() {
             opportunities.
           </p>
         </motion.div>
-
-        {/* Timeline */}
 
         <div className="mt-20">
           {timelineData.map((item, index) => (

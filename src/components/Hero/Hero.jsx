@@ -20,36 +20,22 @@ import HeroCode from "./HeroCode";
 
 function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-24">
-      {/* Background */}
-
+    <section id="home" className="relative min-h-screen overflow-hidden pt-24">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/background.jpg')" }}
       />
 
-      {/* Overlay */}
-
       <div className="absolute inset-0 bg-black/75"></div>
-
-      {/* Purple Glow */}
 
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-purple-700 blur-[180px] opacity-20"></div>
 
       <div className="absolute bottom-0 left-0 w-[350px] h-[350px] rounded-full bg-purple-700 blur-[170px] opacity-20"></div>
 
-      {/* Main */}
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-start pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-start pt-1">
         <div className="grid lg:grid-cols-[2fr_1fr] gap-12 items-start w-full">
-          {/* LEFT */}
-
           <div className="animate-left">
-            {/* Fake Code */}
-
             <HeroCode />
-
-            {/* Hero Card */}
 
             <GlassCard className=" p-8 max-w-2xl hover:shadow-[0_0_80px_rgba(139,92,246,.35)] transition-all duration-500 ">
               <p className="text-gray-300 text-lg">👋 Hello, I'm</p>
@@ -68,39 +54,73 @@ function Hero() {
                 using React, JavaScript, Bootstrap and Tailwind CSS.
               </p>
 
-              {/* Buttons */}
-
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                <PrimaryButton>Download Resume</PrimaryButton>
+                <a
+                  href="/resume/Roshan_Frontend_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <PrimaryButton>View Resume</PrimaryButton>
+                </a>
 
-                <SecondaryButton>Hire Me</SecondaryButton>
+                <a href="#contact">
+                  <SecondaryButton>Hire Me</SecondaryButton>
+                </a>
               </div>
 
-              {/* Social */}
-
               <div className="flex gap-6 mt-10 text-3xl">
-                <FaGithub className=" cursor-pointer hover:text-purple-500 hover:scale-125 transition-all duration-300 " />
+                <a
+                  href="https://github.com/RoshanSaifi93"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub
+                    className="
+                      cursor-pointer
+                      hover:text-purple-500
+                      hover:scale-125
+                      transition-all
+                      duration-300
+                    "
+                  />
+                </a>
 
-                <FaLinkedin className=" cursor-pointer hover:text-purple-500 hover:scale-125 transition-all duration-300 " />
+                <a
+                  href="https://www.linkedin.com/in/roshan-saifi-104619382/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin
+                    className="
+                      cursor-pointer
+                      hover:text-purple-500
+                      hover:scale-125
+                      transition-all
+                      duration-300
+                    "
+                  />
+                </a>
 
-                <FaEnvelope
-                  className="
-                  cursor-pointer
-                  hover:text-purple-500
-                  hover:scale-125
-                  transition-all
-                  duration-300
-                  "
-                />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=saifiroshan88@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaEnvelope
+                    className="
+                      cursor-pointer
+                      hover:text-purple-500
+                      hover:scale-125
+                      transition-all
+                      duration-300
+                    "
+                  />
+                </a>
               </div>
             </GlassCard>
           </div>
 
-          {/* RIGHT */}
-
           <div className="space-y-4 animate-right">
-            {/* Clock Card */}
-
             <GlassCard
               className="
               p-6
@@ -112,8 +132,6 @@ function Hero() {
               <LiveClock />
             </GlassCard>
 
-            {/* Available */}
-
             <GlassCard
               className="
               p-6
@@ -124,8 +142,6 @@ function Hero() {
             >
               <Badge>🟢 Available for Work</Badge>
             </GlassCard>
-
-            {/* Tech Stack */}
 
             <GlassCard
               className="
@@ -184,25 +200,24 @@ function Hero() {
 
       <div
         className="
-    absolute
-    bottom-6
-    left-1/2
-    -translate-x-1/2
-    flex
-    flex-col
-    items-center
-    text-gray-400
-    z-20
-  "
+          absolute
+          bottom-6
+          left-1/2-translate-x-1/2
+          flex
+          flex-col
+          items-center
+          text-gray-400
+          z-20
+        "
       >
         <span className="text-sm tracking-widest uppercase">Scroll</span>
 
         <div
           className="
-      text-3xl
-      animate-bounce-down
-      text-purple-400
-    "
+            text-3xl
+            animate-bounce-down
+            text-purple-400
+          "
         >
           ⌄
         </div>

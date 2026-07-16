@@ -13,13 +13,10 @@ function SkillsGrid() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: index * 0.15 }}
         >
-          {/* Category Heading */}
 
           <h3 className="text-2xl font-bold text-purple-400 mb-8">
             {category.title}
           </h3>
-
-          {/* Skills */}
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {category.skills.map((skill, skillIndex) => (

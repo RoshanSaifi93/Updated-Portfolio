@@ -36,8 +36,6 @@ function ContactCard() {
         me.
       </p>
 
-      {/* Contact Info */}
-
       <div className="mt-10 space-y-6">
         <div className="flex items-center gap-4">
           <FaEnvelope className="text-purple-400 text-xl" />
@@ -49,8 +47,6 @@ function ContactCard() {
           <span>{contactData.location}</span>
         </div>
       </div>
-
-      {/* Buttons */}
 
       <div className="flex flex-wrap gap-4 mt-10">
         <a
