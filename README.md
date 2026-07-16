@@ -6,7 +6,7 @@ A modern and responsive personal portfolio website built with **React**, **Vite*
 
 ## 🚀 Live Demo
 
-🌐 Live Website: https://YOUR-VERCEL-LINK.vercel.app
+🌐 Live Website: https://updated-portfolio-nine-drab-77.vercel.app/
 
 ---
 
